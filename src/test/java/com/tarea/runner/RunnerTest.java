@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         stepNotifications = true,
         features = "src/test/resources/features",
         glue = "com.tarea",
-        tags = "@loginExitoso"
+        tags = "@loginFallido or @loginExitoso or @carrito"
 )
 public class RunnerTest {
 }
