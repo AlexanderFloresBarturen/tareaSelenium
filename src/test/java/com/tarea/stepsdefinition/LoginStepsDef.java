@@ -36,4 +36,11 @@ public class LoginStepsDef {
         Assertions.assertEquals(loginSteps.getErrorMsg(), errorMsg);
         screenShot();
     }
+
+    @Then("se muestra el nombre del usuario {string}")
+    public void seMuestraElNombreDelUsuario(String username) {
+        LoginSteps loginSteps = new LoginSteps(driver);
+        Assertions.assertEquals(loginSteps.getUsername(), username);
+        screenShot();
+    }
 }

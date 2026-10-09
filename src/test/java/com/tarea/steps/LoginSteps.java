@@ -30,13 +30,11 @@ public class LoginSteps {
         this.driver.findElement(LoginPage.loginButton).click();
     }
 
-    /*public void getLogin(String user, String password) {
-        typeUser(user);
-        typePassword(password);
-        loginClick();
-    }*/
-
     public String getErrorMsg() {
         return this.driver.findElement(LoginPage.errorMsg).getText();
+    }
+
+    public String getUsername() {
+        return this.driver.findElement(LoginPage.userName).getText();
     }
 }
